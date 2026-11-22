@@ -7,3 +7,6 @@ firebase-admin-setup/
 node_modules/
 .env
 .env.*
+
+functions/node_modules/
+.firebase/

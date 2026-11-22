@@ -158,7 +158,7 @@ sound.addEventListener('click', async () => {
     updateSound();
   } catch {
     updateSound();
-    alert('Audio playback was blocked. Please tap Play Nasheed again.');
+    console.info('Nasheed playback unavailable; please try the play button again.');
   }
 });
 audio.addEventListener('ended', updateSound);
