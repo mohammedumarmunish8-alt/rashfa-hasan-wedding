@@ -1,0 +1,9 @@
+# Never commit Firebase Admin SDK credentials or private setup
+serviceAccountKey.json
+**/serviceAccountKey.json
+*firebase-adminsdk*.json
+firebase-admin-setup/
+**/firebase-admin-setup/
+node_modules/
+.env
+.env.*

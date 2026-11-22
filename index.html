@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fdf4f3">
+  <title>Fathima Rashfa &amp; Hasan Zubair | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Floating Petals Canvas -->
+  <canvas id="petalCanvas" aria-hidden="true"></canvas>
+
+  <!-- Step 1: Preloader Splash -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-monogram">R <span>&amp;</span> Z</div>
+      <div class="preloader-sub">The Wedding Invitation</div>
+      <div class="preloader-bar"><span></span></div>
+      <p class="arabic preloader-bismillah" lang="ar" dir="rtl">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+    </div>
+  </div>
+
+  <!-- Step 2: Luxury Wax-Sealed Invitation Card Gate -->
+  <div id="welcome" class="welcome">
+    <div class="gate-card" id="gateCard">
+      <span class="corner tl" aria-hidden="true"></span>
+      <span class="corner tr" aria-hidden="true"></span>
+      <span class="corner bl" aria-hidden="true"></span>
+      <span class="corner br" aria-hidden="true"></span>
+
+      <p class="eyebrow">YOU ARE CORDIALLY INVITED</p>
+      <div class="gate-divider"><span>❀</span></div>
+
+      <h1 class="gate-names">
+        Fathima Rashfa
+        <span>&amp;</span>
+        Hasan Zubair
+      </h1>
+
+      <div class="gate-divider"><span>✿</span></div>
+
+      <p class="gate-date">Sunday, 23rd May 2027</p>
+      <p class="gate-hijri" id="gateHijri">17th Dhu al-Hijjah 1448 AH</p>
+
+      <div class="guest-badge" id="guestWelcome">
+        <span class="guest-salam">Assalamu Alaikum, Honored Guest</span>
+      </div>
+
+      <button id="envelope" class="wax-seal-btn" aria-label="Tap wax seal to open invitation">
+        <span class="seal-ring"></span>
+        <span class="seal-core">R <small>&amp;</small> Z</span>
+      </button>
+
+      <button id="open" class="tap-prompt">Tap Seal to Open Invitation</button>
+    </div>
+  </div>
+
+  <!-- Sticky Glassmorphic Top Header -->
+  <header id="topBar" class="top-bar" hidden>
+    <a href="#top" class="brand">Fathima Rashfa <i>&amp;</i> Hasan Zubair</a>
+    <div class="top-actions">
+      <button id="sound" class="pill-btn" title="Play or pause Bride of Light wedding Nasheed" aria-label="Play Bride of Light wedding Nasheed" aria-pressed="false">
+        <span class="eq-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span id="soundLabel">Play Nasheed</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Invitation Experience -->
+  <main id="site" hidden>
+
+    <!-- Hero Section -->
+    <section id="top" class="hero">
+      <div class="hero-card reveal">
+        <span class="corner tl" aria-hidden="true"></span>
+        <span class="corner tr" aria-hidden="true"></span>
+        <span class="corner bl" aria-hidden="true"></span>
+        <span class="corner br" aria-hidden="true"></span>
+
+        <div class="hero-guest-pill" id="heroGuestPill">
+          <span>✨ Assalamu Alaikum, Honored Guest</span>
+        </div>
+
+        <p class="arabic bismillah" lang="ar" dir="rtl">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+        <p class="bismillah-trans">“In the Name of Allah, The Most Gracious, The Most Merciful”</p>
+
+        <div class="ornament-line"><span>❀ ✿ ❀</span></div>
+
+        <h1>A Celebration of Love, Faith &amp; Family</h1>
+        <p class="hero-lead">
+          With joyful hearts and gratitude to Allah Almighty, we cordially invite you to share in our happiness as we unite in holy matrimony.
+        </p>
+
+        <div class="hero-couple-banner">
+          <div class="couple-script">Fathima Rashfa <span>&amp;</span> Hasan Zubair</div>
+          <div class="hero-date-strip">Sunday · 23rd May 2027 · Mangaluru</div>
+        </div>
+
+        <p class="arabic verse-ar" lang="ar" dir="rtl">وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</p>
+        <p class="verse-en">“And He placed between you love and mercy.” — <em>Surah Ar-Rum 30:21</em></p>
+      </div>
+    </section>
+
+    <!-- Couple & Family Lineage Cards -->
+    <section id="couple" class="section soft">
+      <div class="container">
+        <p class="eyebrow">THE COUPLE &amp; FAMILIES</p>
+        <h2>Blessed Union</h2>
+
+        <div class="family-grid">
+          <article class="glass-card reveal">
+            <div class="card-badge">The Bride</div>
+            <div class="monogram-circle">R</div>
+            <h3>FATHIMA RASHFA</h3>
+            <div class="mini-divider">✿</div>
+            <p class="lineage-label">Beloved Daughter of</p>
+            <p class="lineage-names">B K Abdul Rauf &amp; Safana</p>
+          </article>
+
+          <article class="glass-card reveal">
+            <div class="card-badge">The Groom</div>
+            <div class="monogram-circle">Z</div>
+            <h3>HASAN ZUBAIR</h3>
+            <div class="mini-divider">❀</div>
+            <p class="lineage-label">Beloved Son of</p>
+            <p class="lineage-names">Abdul Khader &amp; Hazra</p>
+            <p class="lineage-place">Krishnapura</p>
+          </article>
+        </div>
+
+        <article class="hosts-card reveal">
+          <p class="eyebrow">INVITED WITH LOVE BY THE PARENTS</p>
+          <h3>B K Abdul Rauf &amp; Safana</h3>
+          <p class="host-contact">
+            For enquiries: <a href="tel:+919980801513">+91 99808 01513</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Live Countdown & Post-Wedding Counter -->
+    <section id="countdownSection" class="section">
+      <div class="container">
+        <div class="countdown-box reveal">
+          <p class="eyebrow" id="countdownHeading">COUNTING DOWN TO THE SACRED NIKAH</p>
+          <h2>Sunday, 23rd May 2027</h2>
+          <p class="hijri-sub" id="sectionHijri">17th Dhu al-Hijjah 1448 AH</p>
+          <div class="ornament-line"><span>✿</span></div>
+
+          <div class="countdown" id="countdown" aria-label="Countdown to Nikah"></div>
+
+          <div id="marriedCounter" class="married-banner" hidden>
+            <span class="eyebrow">ALHAMDULILLAH · WE HAVE BEEN MARRIED FOR</span>
+            <div id="marriedDays" class="married-days">0 Days</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Timeline -->
+    <section id="events" class="section soft">
+      <div class="container">
+        <p class="eyebrow">WEDDING SCHEDULE</p>
+        <h2>Event Timeline</h2>
+
+        <div class="timeline">
+          <article class="timeline-card reveal">
+            <div class="time-pill">11:30 AM IST</div>
+            <div class="flower-icon">✿</div>
+            <h3>The Sacred Nikah Ceremony</h3>
+            <p>
+              The solemnization of the Nikah ceremony will take place promptly at <strong>11:30 AM IST</strong> at Indiana Convention Center, Jeppinamogaru, Mangaluru.
+            </p>
+          </article>
+
+          <article class="timeline-card reveal">
+            <div class="time-pill">11:45 AM IST</div>
+            <div class="flower-icon">❀</div>
+            <h3>Grand Wedding Reception</h3>
+            <p>
+              Immediately following the Nikah, please join us for a joyful wedding reception and festive banquet with family and friends.
+            </p>
+          </article>
+
+          <article class="timeline-card reveal">
+            <div class="time-pill">Afternoon</div>
+            <div class="flower-icon">✾</div>
+            <h3>Blessings &amp; Farewell</h3>
+            <p>
+              Warm du'as, family photographs, and personal blessings with the newlyweds and host families.
+            </p>
+          </article>
+        </div>
+
+        <div class="schedule-actions reveal">
+          <button class="primary" id="calendar">📅 Save Date to Google Calendar</button>
+          <button class="outline" id="downloadIcs">⬇ Download .ICS Reminder</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location, Prayer Times, Weather & Cab Partner -->
+    <section id="venue" class="section">
+      <div class="container">
+        <p class="eyebrow">LOCATION &amp; GUIDANCE</p>
+        <h2>Indiana Convention Center</h2>
+        <p class="venue-sub">
+          Jeppinamogaru, Mangaluru, Karnataka — Spacious guest parking, dedicated prayer facilities, and full climate control.
+        </p>
+
+        <div class="venue-grid">
+          <div class="venue-info-col reveal">
+            <div class="info-mini-grid">
+              <div class="info-tile">
+                <div class="tile-title">🕌 Mangaluru Prayer Times</div>
+                <p>
+                  <strong>Dhuhr:</strong> 12:28 PM<br>
+                  <strong>Asr:</strong> 03:45 PM<br>
+                  <strong>Maghrib:</strong> 06:51 PM
+                </p>
+              </div>
+              <div class="info-tile">
+                <div class="tile-title">☀️ May 23 Forecast</div>
+                <p>
+                  <strong>Coastal Breeze</strong><br>
+                  Warm &amp; Pleasant<br>
+                  30°C / 86°F
+                </p>
+              </div>
+            </div>
+
+            <div class="venue-btn-row">
+              <a class="primary" target="_blank" rel="noopener noreferrer" href="https://share.google/uLLk8PyUIL499dHtN">
+                📍 Open Google Maps
+              </a>
+              <button class="outline" id="openCabModal">
+                🚕 Book Cab to Venue
+              </button>
+            </div>
+          </div>
+
+          <div class="map-frame-card reveal">
+            <iframe
+              title="Indiana Convention Center Mangaluru Map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://maps.google.com/maps?q=Indiana%20Convention%20Center%20Jeppinamogaru%20Mangaluru&t=&z=15&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Single Dedicated Photo Space (Preserved from V3) -->
+    <section id="gallery" class="section soft">
+      <div class="container">
+        <p class="eyebrow">OUR MEMORIES</p>
+        <h2>Photo Gallery</h2>
+        <p>Photos of the couple will be added with their permission.</p>
+        <div class="gallery single-photo reveal">
+          <div class="photo-frame" aria-label="One reserved photo space">
+            <span class="frame-ornament">❀</span>
+            <small>Our Photo — Coming Soon</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive 2-Step RSVP Experience -->
+    <section id="rsvp" class="section">
+      <div class="container">
+        <div class="rsvp-shell reveal">
+          <p class="eyebrow">KINDLY RESPOND</p>
+          <h2>Will you join us for our special day?</h2>
+          <div class="ornament-line"><span>✿</span></div>
+
+          <form id="rsvpForm" class="form">
+            <div class="rsvp-choice-pills" role="group" aria-label="Attendance choice">
+              <button type="button" class="choice-pill active" data-val="yes">✨ Joyfully Accepts</button>
+              <button type="button" class="choice-pill" data-val="no">💌 Regretfully Declines</button>
+            </div>
+            <input type="hidden" id="attendance" value="yes">
+
+            <label>
+              Your Name
+              <input id="rsvpName" required maxlength="80" autocomplete="name" placeholder="Enter your full name">
+            </label>
+
+            <label id="guestCountWrap">
+              Number of Guests
+              <input id="guestCount" type="number" min="1" max="20" value="1" required>
+            </label>
+
+            <label>
+              Optional Prayer or Note for the Couple
+              <textarea id="rsvpNote" rows="2" maxlength="250" placeholder="Add a short prayer or dietary/arrival note (optional)..."></textarea>
+            </label>
+
+            <button class="primary" type="submit">Confirm RSVP</button>
+          </form>
+
+          <!-- Jazakum Allahu Khayran Confirmation View -->
+          <div id="rsvpThanks" class="rsvp-thanks" hidden>
+            <p class="arabic" lang="ar" dir="rtl">جَزَاكُمُ ٱللَّٰهُ خَيْرًا</p>
+            <h3>Jazakum Allahu Khayran</h3>
+            <div class="mini-divider">❀</div>
+            <p id="rsvpStatus" role="status">
+              Thank you for confirming your response! We eagerly look forward to celebrating this blessed day with you.
+            </p>
+            <button type="button" class="outline" id="rsvpAgain">Update Response</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Guestbook & Direct WhatsApp Greetings -->
+    <section id="wishes" class="section soft">
+      <div class="container">
+        <p class="eyebrow">GUESTBOOK</p>
+        <h2>Prayers &amp; Blessings</h2>
+        <p>Leave a heartfelt du'a or message for Fathima Rashfa &amp; Hasan Zubair.</p>
+
+        <form id="wishForm" class="form reveal">
+          <label>
+            Your Name
+            <input id="wishName" required maxlength="80" placeholder="Your name">
+          </label>
+          <label>
+            Your Prayer or Blessing
+            <textarea id="wishText" rows="3" maxlength="500" required placeholder="Barakallahu lakuma... Write a warm blessing for the couple"></textarea>
+          </label>
+          <button class="primary" type="submit">Post Blessing</button>
+          <p id="wishStatus" role="status" class="status-msg"></p>
+        </form>
+
+        <div id="wishCarouselWrap" class="wish-carousel-wrap reveal">
+          <div id="wishList" class="wishes-track" aria-live="polite"></div>
+          <p class="swipe-hint">← Swipe left or right to read blessings →</p>
+        </div>
+
+        <div class="wa-direct-box reveal">
+          <p class="eyebrow">DIRECT WHATSAPP GREETINGS</p>
+          <button type="button" id="openWaModal" class="outline">💬 Send WhatsApp Blessing to Host Family</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personalized HD Keepsake Card Generator -->
+    <section id="keepsake" class="section">
+      <div class="container">
+        <p class="eyebrow">SHARE THE JOY</p>
+        <h2>Download Best Wishes Card</h2>
+        <p>
+          Generate a personalized HD keepsake card featuring your name — ready for WhatsApp Status, Instagram Stories, or sharing with family.
+        </p>
+
+        <div class="card-preview-box reveal">
+          <canvas id="previewCanvas" width="540" height="675" aria-label="Personalized Wedding Wishes Card Preview"></canvas>
+          <div class="actions">
+            <button id="downloadCard" class="primary">⬇ Download HD Wishes Card</button>
+            <button id="whatsapp" class="outline">📤 Share Invite on WhatsApp</button>
+            <button id="copyLink" class="outline">🔗 Copy Invitation Link</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing Du'a & Footer -->
+    <footer class="closing-footer">
+      <div class="container">
+        <div class="closing-dua reveal">
+          <p class="arabic" lang="ar" dir="rtl">بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
+          <h2>Thank You</h2>
+          <p class="closing-quote">“Your prayers and presence mean more to us than words can express.”</p>
+          <div class="mini-divider">❀</div>
+          <div class="closing-names">FATHIMA RASHFA &amp; HASAN ZUBAIR</div>
+          <p class="closing-meta">23rd May 2027 · Indiana Convention Center, Mangaluru</p>
+          <p class="closing-host">With love, B K Abdul Rauf &amp; Safana · <a href="tel:+919980801513">+91 99808 01513</a></p>
+        </div>
+
+        <div class="creator-credits">
+          <p class="muted">Made with love · 2027</p>
+          <p>Created by <strong>Munish</strong> · <a href="https://www.instagram.com/munish_05_/" target="_blank" rel="noopener noreferrer" aria-label="Munish on Instagram">@munish_05_</a></p>
+          <p>In collaboration with <a href="https://www.instagram.com/fleurora.re_/" target="_blank" rel="noopener noreferrer" aria-label="Fleurora on Instagram">@fleurora.re_</a></p>
+          <p class="admin-link-wrap"><a href="admin.html">Invitation Manager</a></p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Floating Bottom Pill Navigation -->
+  <nav id="floatingNav" class="floating-nav" aria-label="Section navigation" hidden>
+    <a href="#top" class="nav-pill active" data-target="top">Home</a>
+    <a href="#couple" class="nav-pill" data-target="couple">Couple</a>
+    <a href="#events" class="nav-pill" data-target="events">Events</a>
+    <a href="#venue" class="nav-pill" data-target="venue">Venue</a>
+    <a href="#rsvp" class="nav-pill" data-target="rsvp">RSVP</a>
+    <a href="#wishes" class="nav-pill" data-target="wishes">Wishes</a>
+  </nav>
+
+  <!-- Modal 1: Direct WhatsApp Blessing Selector -->
+  <div id="waModal" class="modal-backdrop" hidden role="dialog" aria-modal="true" aria-labelledby="waModalTitle">
+    <div class="modal-card">
+      <button type="button" class="modal-close" data-close="waModal" aria-label="Close modal">✕</button>
+      <p class="eyebrow">SEND WHATSAPP BLESSING</p>
+      <h3 id="waModalTitle">Who invited you?</h3>
+      <p class="muted">Choose a host contact or share directly via WhatsApp:</p>
+      <div class="modal-stack">
+        <a class="primary" target="_blank" rel="noopener noreferrer" href="https://wa.me/919980801513?text=Assalamu%20Alaikum!%20Barakallahu%20lakuma%20to%20Fathima%20Rashfa%20%26%20Hasan%20Zubair%20on%20their%20wedding!">
+          💬 Message Bride's Family (B K Abdul Rauf)
+        </a>
+        <button type="button" class="outline" id="waGeneralShare">
+          📤 Forward Invitation on WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Automated Travel & Cab Partner -->
+  <div id="cabModal" class="modal-backdrop" hidden role="dialog" aria-modal="true" aria-labelledby="cabModalTitle">
+    <div class="modal-card">
+      <button type="button" class="modal-close" data-close="cabModal" aria-label="Close modal">✕</button>
+      <p class="eyebrow">TRAVEL PARTNER</p>
+      <h3 id="cabModalTitle">Book Cab to Venue</h3>
+      <p id="geoStatus" class="muted">Destination: Indiana Convention Center, Jeppinamogaru, Mangaluru</p>
+      <div class="modal-stack">
+        <a id="uberLink" class="primary" target="_blank" rel="noopener noreferrer" href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=Indiana%20Convention%20Center%2C%20Jeppinamogaru%2C%20Mangaluru">
+          🚘 Open in Uber
+        </a>
+        <a class="outline" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/dir/?api=1&destination=Indiana+Convention+Center+Jeppinamogaru+Mangaluru&travelmode=driving">
+          🗺️ Turn-by-Turn Driving Route
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden 4K Export Canvas -->
+  <canvas id="hdExportCanvas" width="2160" height="2700" hidden></canvas>
+
+  <!-- Supplied wedding Nasheed; playback starts after user interaction -->
+  <audio id="nasheed" preload="none" loop src="assets/bride-of-light.mp3"></audio>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
