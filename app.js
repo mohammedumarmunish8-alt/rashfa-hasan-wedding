@@ -1,3 +1,4 @@
+import {shareText} from "./share-message.js?v=20261126";
 import { saveRsvp, saveWish, listWishes, backendMode } from './backend.js';
 
 const $ = s => document.querySelector(s);
@@ -379,7 +380,7 @@ $('#downloadCard').addEventListener('click', () => {
 
 // 10. Share & Modals (WhatsApp & Travel Cab Partner)
 function shareWhatsApp() {
-  const msg = `Assalamu Alaikum, we are pleased to invite you and your family to the Nikah of Fathima Rashfa and Hassan Zubeir. Your presence and duas would be greatly appreciated.\n\n${location.href}`;
+  const msg = shareText(location.href);
   window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank', 'noopener,noreferrer');
 }
 

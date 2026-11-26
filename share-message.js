@@ -1,0 +1,2 @@
+export const invitationMessage = "Assalamu Alaikum!\n\nBy the grace and mercy of Allah, we are beginning a beautiful new chapter of our lives.\nWe would be honoured by your presence and duas on our special day as we celebrate this blessed union together, In Shaa Allah!\n\nWould love to have you there to make our day even more special.";
+export const shareText = link => invitationMessage + "\n\n" + link;
